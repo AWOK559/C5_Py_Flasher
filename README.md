@@ -10,7 +10,7 @@ Python-based auto flasher for ESP32-C5 devices. The script waits for the ESP32-C
 - Watches your system’s serial ports and waits until your ESP32-C5 shows up as a **newly connected** port.
 - Validates required firmware components in `bins/`.
 - Prompts for confirmation before flashing.
-- 
+
 The script flashes at **921600 baud** and performs a **hard reset** after flashing.
 
 ---
@@ -20,6 +20,7 @@ The script flashes at **921600 baud** and performs a **hard reset** after flashi
 - **Python 3.8+**
 - `pip` (comes with most Python installs)
 - USB-C to USB-A **data** cable (not charge-only)
+- [Silicon Labs CP210x USB to UART Bridge Drivers](https://www.silabs.com/software-and-tools/usb-to-uart-bridge-vcp-drivers?tab=downloads)
 
 Check Python:
 
@@ -121,6 +122,7 @@ This script detects the ESP32-C5 only when it appears as a **new** serial port.
 - Use a known-good **data** USB-C cable
 - Try a different USB port on your computer
 - If you plugged it in before running the script, unplug it and plug it back in (so it shows up as “new”)
+- Make sure your USB to UART Drivers are installed and up-to-date
 
 ### 4) Wrong firmware gets selected
 Because the script chooses the **largest** remaining `.bin` in `bins/`, ensure:
