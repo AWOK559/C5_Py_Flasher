@@ -95,6 +95,8 @@ y
 5) **Disconnect when finished**
 After flashing completes, the tool will reset the device. When you see the device reset / “hardware reset” behavior, you may disconnect your ESP32-C5.
 
+![Demo](./assets/demo_flash.gif)
+
 ---
 
 ## Troubleshooting
