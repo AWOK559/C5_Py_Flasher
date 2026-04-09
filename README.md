@@ -21,6 +21,7 @@ The script flashes at **921600 baud** and performs a **hard reset** after flashi
 - `pip` (comes with most Python installs)
 - USB-C to USB-A **data** cable (not charge-only)
 - [Silicon Labs CP210x USB to UART Bridge Drivers](https://www.silabs.com/software-and-tools/usb-to-uart-bridge-vcp-drivers?tab=downloads)
+- Firmware .bin file [Marauder](https://github.com/justcallmekoko/ESP32Marauder/releases)
 
 Check Python:
 
