@@ -122,10 +122,11 @@ python3 -m pip install -r requirements.txt
 This script detects the ESP32-C5 only when it appears as a **new** serial port.
 
 - Start the script **with the device unplugged**
-- Use a known-good **data** USB-C cable
+- Use a known-good basic **data** USB-C to USB-A cable
 - Try a different USB port on your computer
 - If you plugged it in before running the script, unplug it and plug it back in (so it shows up as “new”)
 - Make sure your USB to UART Drivers are installed and up-to-date
+- Because you need to use a USB-C to USB-A cable some laptops or computers may only have USB-C ports available, you will want to use a USB hub that has a USB-C connection to the PC and at least one USB-A port on it. 
 
 ### 4) Wrong firmware gets selected
 Because the script chooses the **largest** remaining `.bin` in `bins/`, ensure:
