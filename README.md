@@ -22,7 +22,13 @@ The script flashes at **921600 baud** and performs a **hard reset** after flashi
 - USB-C to USB-A **data** cable (not charge-only)
 - [Silicon Labs CP210x USB to UART Bridge Drivers](https://www.silabs.com/software-and-tools/usb-to-uart-bridge-vcp-drivers?tab=downloads)
 - Firmware .bin file [Marauder](https://github.com/justcallmekoko/ESP32Marauder/releases)
-
+  - Dual C5 Touch (Marauder Firmware)
+    - Screen (White Port) = _v8.bin
+    - F0 side (Orange Port) = _esp32c5_devkit.bin
+  - Dual C5 Mini (Marauder Firmware)
+    - Screen (White Port) = DUAL_MINI_C5.bin
+    - F0 side (Orange Port) = _esp32c5_devkit.bin
+    
 Check Python:
 
 ```bash
