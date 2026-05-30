@@ -22,7 +22,13 @@ The script flashes at **921600 baud** and performs a **hard reset** after flashi
 - USB-C to USB-A **data** cable (not charge-only)
 - [Silicon Labs CP210x USB to UART Bridge Drivers](https://www.silabs.com/software-and-tools/usb-to-uart-bridge-vcp-drivers?tab=downloads)
 - Firmware .bin file [Marauder](https://github.com/justcallmekoko/ESP32Marauder/releases)
-
+  - Dual C5 Touch (Marauder Firmware)
+    - Screen (White Port) = _v8.bin
+    - F0 side (Orange Port) = _esp32c5_devkit.bin
+  - Dual C5 Mini (Marauder Firmware)
+    - Screen (White Port) = DUAL_MINI_C5.bin
+    - F0 side (Orange Port) = _esp32c5_devkit.bin
+    
 Check Python:
 
 ```bash
@@ -95,6 +101,8 @@ y
 5) **Disconnect when finished**
 After flashing completes, the tool will reset the device. When you see the device reset / “hardware reset” behavior, you may disconnect your ESP32-C5.
 
+![Demo](./assets/demo_flash.gif)
+
 ---
 
 ## Troubleshooting
@@ -120,10 +128,11 @@ python3 -m pip install -r requirements.txt
 This script detects the ESP32-C5 only when it appears as a **new** serial port.
 
 - Start the script **with the device unplugged**
-- Use a known-good **data** USB-C cable
+- Use a known-good basic **data** USB-C to USB-A cable
 - Try a different USB port on your computer
 - If you plugged it in before running the script, unplug it and plug it back in (so it shows up as “new”)
 - Make sure your USB to UART Drivers are installed and up-to-date
+- Because you need to use a USB-C to USB-A cable some laptops or computers may only have USB-C ports available, you will want to use a USB hub that has a USB-C connection to the PC and at least one USB-A port on it. 
 
 ### 4) Wrong firmware gets selected
 Because the script chooses the **largest** remaining `.bin` in `bins/`, ensure:
