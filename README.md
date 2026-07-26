@@ -34,7 +34,7 @@ The script flashes at **921600 baud** and performs a **hard reset** after flashi
     - Orange Port = AWOK Dual C5 Touch (ESP32-C5)
   - Dual C5 Mini (Biscuit)
     - Orange Port = AWOK Dual C5 Mini (ESP32-C5)
-![Demo](./assets/biscuit_menu.png
+![Demo](./assets/biscuit_menu.png)
 
 Check Python:
 
