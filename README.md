@@ -21,7 +21,7 @@ The script flashes at **921600 baud** and performs a **hard reset** after flashi
 - `pip` (comes with most Python installs)
 - USB-C to USB-A **data** cable (not charge-only)
 - [Silicon Labs CP210x USB to UART Bridge Drivers](https://www.silabs.com/software-and-tools/usb-to-uart-bridge-vcp-drivers?tab=downloads)
-- Firmware .bin file [Marauder](https://github.com/justcallmekoko/ESP32Marauder/releases)
+- Firmware .bin file [Marauder](https://github.com/justcallmekoko/ESP32Marauder/releases) (make sure to add the firmware bin to your bins folder, and make sure there is only one firmware present when flashing. If you need some default bins to flash grab them from the assets folder of this repo.)
   - Dual C5 Touch (Marauder Firmware)
     - Screen (White Port) = _v8.bin
     - F0 side (Orange Port) = _esp32c5_devkit.bin
