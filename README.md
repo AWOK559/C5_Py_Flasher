@@ -26,9 +26,16 @@ The script flashes at **921600 baud** and performs a **hard reset** after flashi
     - Screen (White Port) = _v8.bin
     - F0 side (Orange Port) = _esp32c5_devkit.bin
   - Dual C5 Mini (Marauder Firmware)
-    - Screen (White Port) = DUAL_MINI_C5.bin
+    - Screen (White Port) = _dual_mini_c5.bin
     - F0 side (Orange Port) = _esp32c5_devkit.bin
-    
+ 
+- [Biscuit](https://codehedge.github.io/diy_node_web_flasher/) Firmware Web Flasher   
+  - Dual C5 Touch (Biscuit)
+    - Orange Port = AWOK Dual C5 Touch (ESP32-C5)
+  - Dual C5 Mini (Biscuit)
+    - Orange Port = AWOK Dual C5 Mini (ESP32-C5)
+![Demo](./assets/biscuit_menu.png
+
 Check Python:
 
 ```bash
